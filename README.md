@@ -1,6 +1,9 @@
 # Scientific Paper Processing Pipeline
 
 This repository contains three Python scripts that work together to process scientific papers, extract key information, analyze content with Claude AI, and create standardized markdown files for knowledge management.
+Key information specifically focusing on **Abstract** and **Introduction** sections, which I personally believe the crucial part suggesting the direction and scope of the research article.
+
+[03.10.2025] Module _1_extract_paper_data.py_ currently is not 100% capture the introduction part, use with caution.
 
 ## AI tools disclosure
 
