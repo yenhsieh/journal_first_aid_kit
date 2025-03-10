@@ -80,6 +80,7 @@ CLAUDE_MODEL=claude-3-5-sonnet-20240620
 ### 1. Extract Paper Data (`1_extract_paper_data.py`)
 
 Extracts introduction text from PDFs and fetches abstracts from Zotero when available.
+PDF files are previously renamed via [ZotFile](https://zotfile.com/) extension with the default renaming rule of _{%a_}{%y_}{%t}_.
 
 ```bash
 # Process a folder of PDFs
