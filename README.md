@@ -41,10 +41,6 @@ pip install pyzotero PyMuPDF anthropic python-dotenv pyyaml
 - **python-dotenv**: Load environment variables
 - **pyyaml**: Handle YAML frontmatter
 
-### External Dependencies
-
-- **extract_introduction.py**: Script to extract introductions from PDFs (imported by the first script)
-
 ### Environment Variables
 
 Create a `.env` file in the PDF directory with the following variables:
