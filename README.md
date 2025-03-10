@@ -125,6 +125,38 @@ python 2_analyze_with_claude.py ~/research/extracted
 # 3. Create markdown files
 python 3_create_markdown.py ~/research/extracted ~/research/markdown
 ```
+## Claude Prompt structure
+
+```text
+I have content from a scientific paper that I need you to analyze. Please:
+
+    1. Summarize the key points in 4-6 sentences
+    2. Identify the main research gap or problem being addressed
+    3. Extract the paper's apparent objectives or research questions
+    4. Generate EXACTLY 5 important keywords/concepts. Choose only the most critical 5 terms that best represent the paper.
+
+    When generating keywords, please follow these rules:
+    - Use SINGULAR forms only (e.g., "biomarker" not "biomarkers")
+    - Use underscores instead of spaces (e.g., "gene_expression")
+    - Maintain standard capitalization for abbreviations (RNA-Seq, miRNA, DNA)
+
+    Title: {title}
+
+    {analysis_text}
+
+    Respond in this format:
+    SUMMARY:
+    [Your summary here]
+
+    RESEARCH GAP/PROBLEM:
+    [Identified research gap or problem]
+
+    OBJECTIVES:
+    [Research objectives/questions]
+
+    KEYWORDS:
+    [5 singular keywords separated by commas]
+```
 
 ## Markdown File Structure
 
